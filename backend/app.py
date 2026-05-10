@@ -13,7 +13,8 @@ from support_chatbot import generate_support_response, generate_support_report
 
 os.environ.setdefault('KERAS_BACKEND', 'jax')
 
-PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, '..'))
 FRONTEND_DIST_DIR = os.path.join(PROJECT_ROOT, 'frontend', 'dist')
 
 app = Flask(__name__, static_folder=FRONTEND_DIST_DIR, static_url_path='')
@@ -30,11 +31,11 @@ CORS(
 DATA_PATH = os.path.join(os.path.dirname(__file__), 'data.json')
 SUPPORT_REPORTS_PATH = os.path.join(os.path.dirname(__file__), 'support_reports.json')
 MODEL_PATHS = {
-    'mlp': os.path.join(PROJECT_ROOT, 'student_dropout_mlp_model.pkl'),
-    'lstm': os.path.join(PROJECT_ROOT, 'student_dropout_lstm_model (2).pkl'),
-    'rf': os.path.join(PROJECT_ROOT, 'student_dropout_rf_model.pkl'),
-    'dt': os.path.join(PROJECT_ROOT, 'decision_tree_model.pkl'),
-    'meta': os.path.join(PROJECT_ROOT, 'meta_model.pkl'),
+    'mlp': os.path.join(BASE_DIR, 'student_dropout_mlp_model.pkl'),
+    'lstm': os.path.join(BASE_DIR, 'student_dropout_lstm_model (2).pkl'),
+    'rf': os.path.join(BASE_DIR, 'student_dropout_rf_model.pkl'),
+    'dt': os.path.join(BASE_DIR, 'decision_tree_model.pkl'),
+    'meta': os.path.join(BASE_DIR, 'meta_model.pkl'),
 }
 REQUIRED_FIELDS = [
     'name',
