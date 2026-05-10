@@ -1,0 +1,354 @@
+[
+  {
+    "id": 1,
+    "created_at": "2026-04-09T06:06:00.496472Z",
+    "student_id": null,
+    "student_name": "Anonymous student",
+    "student_profile": null,
+    "sharing_consent": true,
+    "session_end_reason": "tab_closed",
+    "feedback": {
+      "satisfaction": "not_provided",
+      "needs_human_consultant": false,
+      "note": ""
+    },
+    "report": {
+      "conversation_type": "Initial outreach / Incomplete interaction",
+      "primary_concern": "Undetermined",
+      "summary": "The student initiated contact with a brief exclamation ('holy moly') but the session was interrupted by a technical connection issue before any substantial information could be shared.",
+      "confirmed_risk_factors": [],
+      "newly_disclosed_factors": [],
+      "factors_needing_follow_up": [
+        "Reason for initial outreach",
+        "Current emotional state",
+        "Potential academic or personal stressors"
+      ],
+      "student_strengths": [
+        "Proactive engagement with support tools"
+      ],
+      "urgency_level": "low",
+      "recommended_support_actions": [
+        "Re-initiate contact to allow the student to finish their thought",
+        "Verify if the student requires technical assistance with the support platform"
+      ],
+      "risk_confirmation_status": "Inconclusive due to insufficient data",
+      "follow_up_focus": "Establishing a stable line of communication to identify the student's needs.",
+      "counselor_handoff_note": "The student began a session with an exclamation but was disconnected due to a system error. It is unclear if 'holy moly' referred to their personal situation or the start of the chat. Recommend a gentle check-in to ensure they have a chance to speak."
+    },
+    "conversation": [
+      {
+        "role": "assistant",
+        "text": "Hi, I'm here to listen. You can talk to me about stress, academic pressure, burnout, or anything that's making college feel hard right now."
+      },
+      {
+        "role": "user",
+        "text": "holy moly"
+      },
+      {
+        "role": "assistant",
+        "text": "I\u2019m still here with you, but I\u2019m having trouble connecting right now. If things feel urgent, please reach out to a trusted person, counselor, or local support service while this reconnects."
+      }
+    ],
+    "source": "support_chatbot"
+  },
+  {
+    "id": 2,
+    "created_at": "2026-04-09T06:07:07.837494Z",
+    "student_id": null,
+    "student_name": "Anonymous student",
+    "student_profile": null,
+    "sharing_consent": true,
+    "session_end_reason": "ended_by_student",
+    "feedback": {
+      "satisfaction": "satisfied",
+      "needs_human_consultant": false,
+      "note": ""
+    },
+    "report": {
+      "conversation_type": "Brief/Incomplete Engagement",
+      "primary_concern": "Unspecified",
+      "summary": "The student initiated a conversation with a greeting but ended the interaction immediately after the assistant's first response without disclosing any specific concerns or struggles.",
+      "confirmed_risk_factors": [],
+      "newly_disclosed_factors": [],
+      "factors_needing_follow_up": [
+        "Reason for initial outreach",
+        "Current emotional state",
+        "Reason for rapid disengagement"
+      ],
+      "student_strengths": [
+        "Demonstrated the initiative to start a support conversation"
+      ],
+      "urgency_level": "low",
+      "recommended_support_actions": [
+        "Send a gentle, low-pressure follow-up message to check in",
+        "Provide a link to self-help resources for future use"
+      ],
+      "risk_confirmation_status": "Inconclusive due to lack of information.",
+      "follow_up_focus": "Building rapport and understanding the student's initial motivation for reaching out.",
+      "counselor_handoff_note": "The student reached out with 'hi' but quickly exited the chat with 'byeeeeee'. No specific issues were raised. A brief follow-up is recommended to ensure the student feels comfortable returning to the service when they are ready."
+    },
+    "conversation": [
+      {
+        "role": "assistant",
+        "text": "Hi, I'm here to listen. You can talk to me about stress, academic pressure, burnout, or anything that's making college feel hard right now."
+      },
+      {
+        "role": "user",
+        "text": "hi"
+      },
+      {
+        "role": "assistant",
+        "text": "Hi there! I\u2019m so glad you reached out. Sometimes, just saying \"hi\" is the first step toward feeling a little lighter. I know that college life can feel like a constant balancing act between classes, social life, and just trying to figure things out. It is completely okay if things feel a bit heavy or confusing right now. Whether you\u2019re feeling stressed about an upcoming exam, feeling a bit lonely, or just need a space to vent, I\u2019m here to listen without any judgment.\n\nTo help us get started, here are a few gentle things you might try:\n\n1. Take a slow, deep breath and just notice how you\u2019re feeling in this exact moment.\n2. Think about one specific thing\u2014even if it feels small\u2014that has been on your mind the most lately.\n3. Remember that you don\u2019t have to have everything figured out all at once; we can take this one step at a time.\n\nYou\u2019re doing your best, and that is enough. Is there something specific on your mind today, or would you just like to talk through how your week has been going?"
+      },
+      {
+        "role": "user",
+        "text": "byeeeeee"
+      },
+      {
+        "role": "assistant",
+        "text": "I\u2019m still here with you, but I\u2019m having trouble connecting right now. If things feel urgent, please reach out to a trusted person, counselor, or local support service while this reconnects."
+      }
+    ],
+    "source": "support_chatbot",
+    "feedback_updated_at": "2026-04-09T06:07:15.829148Z"
+  },
+  {
+    "id": 3,
+    "created_at": "2026-04-09T07:06:29.996239Z",
+    "student_id": null,
+    "student_name": "Anonymous student",
+    "student_profile": null,
+    "sharing_consent": true,
+    "session_end_reason": "tab_closed",
+    "feedback": {
+      "satisfaction": "not_provided",
+      "needs_human_consultant": false,
+      "note": ""
+    },
+    "report": {
+      "conversation_type": "initial check-in",
+      "primary_concern": "not yet disclosed",
+      "summary": "The student responded with a greeting but has not yet shared any specific concerns or challenges.",
+      "confirmed_risk_factors": [],
+      "newly_disclosed_factors": [],
+      "factors_needing_follow_up": [
+        "general well-being",
+        "potential undisclosed concerns"
+      ],
+      "student_strengths": [],
+      "urgency_level": "low",
+      "recommended_support_actions": [
+        "Gently invite the student to share what's on their mind when they are ready.",
+        "Reiterate the availability of support and a safe space to talk."
+      ],
+      "risk_confirmation_status": "No risks predicted or disclosed at this time.",
+      "follow_up_focus": "Encourage the student to elaborate on their current feelings or challenges, if any.",
+      "counselor_handoff_note": "Student has initiated contact but has not yet shared specific concerns. Further interaction is needed to understand their needs."
+    },
+    "conversation": [
+      {
+        "role": "assistant",
+        "text": "Hi, I'm here to listen. You can talk to me about stress, academic pressure, burnout, or anything that's making college feel hard right now."
+      },
+      {
+        "role": "user",
+        "text": "hi"
+      }
+    ],
+    "source": "support_chatbot"
+  },
+  {
+    "id": 4,
+    "created_at": "2026-04-09T09:52:57.682022Z",
+    "student_id": 1296,
+    "student_name": "Pragun Anand Jha",
+    "student_profile": {
+      "id": 32,
+      "name": "Pragun Anand Jha",
+      "class": 4,
+      "section": "B",
+      "attendance": 84,
+      "marks": 72,
+      "risk_score": 58,
+      "risk_level": "Medium",
+      "explanation": "Attendance data combined with marksheet SGPA (7.24) from marks.pdf.",
+      "roll_no": "2K24CSUN01296",
+      "source": "attendance_and_marks_pdf",
+      "gender": "Female",
+      "location": "Rural",
+      "internet": "Good",
+      "internet_access": "Good",
+      "parental_educ": "Primary",
+      "parent_education": "Primary",
+      "gpa": 7.2,
+      "previous_gpa": 7.6,
+      "nlp_sentiment": "Neutral",
+      "engagement_weekly": 6.1,
+      "average_engagement_weekly": 6.1,
+      "grade_trend": "stable",
+      "attendance_trend": "increasing",
+      "grade_letter": "A",
+      "grade_point": 8,
+      "grade_description": "Very Good",
+      "risk_reasons": [
+        "Low weekly engagement suggests reduced academic involvement",
+        "Lower home academic support may contribute to risk"
+      ],
+      "top_factors": [
+        "Engagement",
+        "Home Support"
+      ],
+      "student_lookup_id": 1296
+    },
+    "sharing_consent": true,
+    "session_end_reason": "ended_by_student",
+    "feedback": {
+      "satisfaction": "satisfied",
+      "needs_human_consultant": true,
+      "note": "IM HAPPYYYYY"
+    },
+    "report": {
+      "conversation_type": "Brief, interrupted initial check-in",
+      "primary_concern": "Undisclosed / Unclear due to technical interruption",
+      "summary": "The student, Pragun Anand Jha, initiated contact by saying 'hi' in response to the support assistant's opening. The conversation was immediately interrupted by a technical connection issue, preventing any further interaction or disclosure from the student.",
+      "confirmed_risk_factors": [],
+      "newly_disclosed_factors": [],
+      "factors_needing_follow_up": [
+        "Engagement (predicted)",
+        "Home Support (predicted)",
+        "General well-being and potential reasons for reaching out"
+      ],
+      "student_strengths": [],
+      "urgency_level": "medium",
+      "recommended_support_actions": [
+        "Attempt to re-establish connection with Pragun to ensure they are okay and offer support.",
+        "Gently inquire if they were trying to discuss anything specific when the connection was lost.",
+        "Be prepared to explore predicted risk factors (engagement, home support) if the student opens up."
+      ],
+      "risk_confirmation_status": "Unconfirmed - conversation was too brief to assess.",
+      "follow_up_focus": "Re-establish connection; gently explore initial reasons for reaching out or any current challenges, especially related to predicted factors like engagement and home support.",
+      "counselor_handoff_note": "Student Pragun Anand Jha (ID: 32) initiated contact but the conversation was immediately interrupted by a technical connection issue after the student said 'hi'. No specific concerns were disclosed. Predicted risk level is Medium (score 58) with top factors 'Engagement' and 'Home Support'. A follow-up is needed to re-establish contact and gently explore potential concerns, especially given the predicted risk."
+    },
+    "conversation": [
+      {
+        "role": "assistant",
+        "text": "Hi, I'm here to listen. You can talk to me about stress, academic pressure, burnout, or anything that's making college feel hard right now."
+      },
+      {
+        "role": "user",
+        "text": "hi"
+      },
+      {
+        "role": "assistant",
+        "text": "I\u2019m still here with you, but I\u2019m having trouble connecting right now. If things feel urgent, please reach out to a trusted person, counselor, or local support service while this reconnects."
+      }
+    ],
+    "source": "support_chatbot",
+    "feedback_updated_at": "2026-04-09T09:54:10.476617Z"
+  },
+  {
+    "id": 5,
+    "created_at": "2026-04-14T16:52:13.200539Z",
+    "student_id": null,
+    "student_name": "Anonymous student",
+    "student_profile": null,
+    "sharing_consent": true,
+    "session_end_reason": "ended_by_student",
+    "feedback": {
+      "satisfaction": "not_satisfied",
+      "needs_human_consultant": false,
+      "note": ""
+    },
+    "report": {
+      "conversation_type": "Initial Outreach",
+      "primary_concern": "Unclear; student has not yet disclosed specific concerns.",
+      "summary": "The student initiated contact with the support assistant by saying 'hi' after the assistant offered to listen about stress, academic pressure, or burnout. The student has not yet shared details about what is on their mind.",
+      "confirmed_risk_factors": [],
+      "newly_disclosed_factors": [],
+      "factors_needing_follow_up": [
+        "The specific reasons the student reached out for support."
+      ],
+      "student_strengths": [
+        "Demonstrated willingness to engage with support by initiating contact."
+      ],
+      "urgency_level": "low",
+      "recommended_support_actions": [
+        "Continue gentle, open-ended questions to encourage the student to share.",
+        "Reiterate availability to listen without judgment.",
+        "Offer various ways for the student to express themselves if direct verbal sharing is difficult (e.g., writing, choosing from a list of common stressors)."
+      ],
+      "risk_confirmation_status": "No risks confirmed; student has not yet disclosed any information.",
+      "follow_up_focus": "Gently encourage the student to articulate what prompted them to reach out and what challenges they might be facing.",
+      "counselor_handoff_note": "Student initiated contact but has not yet shared any specific concerns. Current interaction is minimal. Recommend continued gentle outreach to establish rapport and encourage disclosure."
+    },
+    "conversation": [
+      {
+        "role": "assistant",
+        "text": "Hi, I'm here to listen. You can talk to me about stress, academic pressure, burnout, or anything that's making college feel hard right now."
+      },
+      {
+        "role": "user",
+        "text": "hi"
+      },
+      {
+        "role": "assistant",
+        "text": "Hi there! Thanks for reaching out. It takes courage to take that first step, and I'm really glad you did.\n\nI'm here to listen to whatever's on your mind, whether it's about classes, feeling overwhelmed, or just anything that's making college feel a bit tough right now. There's no pressure at all, but if you feel like sharing, I'm here to listen without judgment.\n\nWhat's been on your mind lately?"
+      }
+    ],
+    "source": "support_chatbot",
+    "feedback_updated_at": "2026-04-14T16:52:16.540992Z"
+  },
+  {
+    "id": 6,
+    "created_at": "2026-04-29T05:50:54.576468Z",
+    "student_id": null,
+    "student_name": "Anonymous student",
+    "student_profile": null,
+    "sharing_consent": true,
+    "session_end_reason": "ended_by_student",
+    "feedback": {
+      "satisfaction": "partly_satisfied",
+      "needs_human_consultant": true,
+      "note": ""
+    },
+    "report": {
+      "conversation_type": "Initial outreach / Undisclosed concern",
+      "primary_concern": "Undisclosed",
+      "summary": "The student initiated contact by saying 'hi' but has not yet shared any specific concerns or details about why they reached out. They responded to the support assistant's greeting.",
+      "confirmed_risk_factors": [],
+      "newly_disclosed_factors": [],
+      "factors_needing_follow_up": [
+        "The reason for the student's initial outreach",
+        "Any underlying concerns that prompted them to connect"
+      ],
+      "student_strengths": [
+        "Initiated contact with support"
+      ],
+      "urgency_level": "low",
+      "recommended_support_actions": [
+        "Continue gentle encouragement to share at their own pace",
+        "Reiterate availability and offer a safe, non-judgmental space",
+        "Propose a brief check-in at a later time if no further sharing occurs"
+      ],
+      "risk_confirmation_status": "No risks confirmed; no student profile context provided to compare against.",
+      "follow_up_focus": "Gently explore the reason for the student's outreach and what might be on their mind, without pressure.",
+      "counselor_handoff_note": "Student initiated contact but has not yet disclosed any specific concerns. Needs gentle follow-up to understand their needs and provide an opening for them to share when ready."
+    },
+    "conversation": [
+      {
+        "role": "assistant",
+        "text": "Hi, I'm here to listen. You can talk to me about stress, academic pressure, burnout, or anything that's making college feel hard right now."
+      },
+      {
+        "role": "user",
+        "text": "hi"
+      },
+      {
+        "role": "assistant",
+        "text": "Hi there! Thanks for saying hi and reaching out. It's completely okay to just start with a simple greeting \u2013 sometimes it's hard to know exactly where to begin, and that's perfectly normal.\n\nI'm here to listen whenever you're ready to share what's on your mind. Whether it's about stress, academics, social life, or anything else that might be making college feel a bit challenging, I'm here to offer a supportive ear. No pressure at all, just take your time.\n\nIs there anything you'd like to talk about today, or something that's been on your mind lately?"
+      }
+    ],
+    "source": "support_chatbot",
+    "feedback_updated_at": "2026-04-29T05:51:01.916004Z"
+  }
+]

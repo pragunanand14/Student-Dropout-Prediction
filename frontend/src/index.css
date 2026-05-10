@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100vh;
+}
+
+html,
+body {
+  transition: none;
+}
+
+html.dark body {
+  background: #000814;
+  color: #e5e7eb;
+}
+
+html.dark,
+html.dark #root {
+  background: #000814;
+}
+
+html.dark .app-theme,
+html.dark .dashboard-theme {
+  background: #000814;
+  color: #e5e7eb;
+}
+
+.dashboard-theme {
+  --dash-bg: #f5efe7;
+  --dash-surface: #fffdf8;
+  --dash-surface-2: #f8f2ea;
+  --dash-border: #e6d8c9;
+  --dash-text: #1f1b16;
+  --dash-muted: #6b6257;
+  --dash-accent: #1f6f78;
+  --dash-accent-strong: #0f3d3a;
+  --dash-accent-soft: rgba(31, 111, 120, 0.12);
+  --dash-warm: #d17b45;
+  --dash-warm-soft: rgba(209, 123, 69, 0.16);
+  --dash-danger: #b84545;
+  --dash-success: #2f8f83;
+  --dash-shadow: 0 30px 80px -48px rgba(16, 18, 22, 0.45);
+  font-family: 'Space Grotesk', ui-sans-serif, system-ui;
+}
+
+html.dark .dashboard-theme {
+  --dash-bg: #0c1214;
+  --dash-surface: #121a1d;
+  --dash-surface-2: #0f171a;
+  --dash-border: #1f2a2e;
+  --dash-text: #f0e7db;
+  --dash-muted: #a39a8f;
+  --dash-accent: #4cc9bd;
+  --dash-accent-strong: #2f8f83;
+  --dash-accent-soft: rgba(76, 201, 189, 0.12);
+  --dash-warm: #f0a46f;
+  --dash-warm-soft: rgba(240, 164, 111, 0.14);
+  --dash-danger: #e06f6f;
+  --dash-success: #58c7ba;
+  --dash-shadow: 0 26px 70px -50px rgba(0, 0, 0, 0.65);
+}
+
+@layer components {
+  .dash-card {
+    background: var(--dash-surface);
+    border: 1px solid var(--dash-border);
+    border-radius: 28px;
+    box-shadow: var(--dash-shadow);
+  }
+
+  .dash-panel {
+    background: var(--dash-surface-2);
+    border: 1px solid var(--dash-border);
+    border-radius: 22px;
+  }
+
+  .dash-kicker {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--dash-muted);
+  }
+
+  .dash-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: var(--dash-text);
+    letter-spacing: -0.01em;
+  }
+
+  .dash-muted {
+    color: var(--dash-muted);
+  }
+
+  .dash-chip {
+    background: var(--dash-accent-soft);
+    color: var(--dash-accent);
+    border: 1px solid rgba(31, 111, 120, 0.25);
+    border-radius: 999px;
+  }
+
+  .dash-btn {
+    border-radius: 16px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    transition: 180ms ease;
+  }
+
+  .dash-btn-primary {
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--dash-accent-strong), var(--dash-accent));
+    box-shadow: 0 18px 35px -24px rgba(15, 61, 58, 0.65);
+  }
+
+  .dash-btn-warm {
+    color: var(--dash-warm);
+    background: var(--dash-warm-soft);
+    border: 1px solid rgba(209, 123, 69, 0.35);
+  }
+
+  .dash-btn-ghost {
+    color: var(--dash-text);
+    background: transparent;
+    border: 1px solid var(--dash-border);
+  }
+}
+
+html.dark .app-theme .bg-gray-50,
+html.dark .dashboard-theme .bg-gray-50 {
+  background-color: #000814 !important;
+}
+
+html.dark .app-theme .bg-white,
+html.dark .app-theme .bg-white\/95,
+html.dark .app-theme .bg-white\/90,
+html.dark .app-theme .bg-white\/85,
+html.dark .app-theme .bg-white\/80,
+html.dark .app-theme .bg-white\/75,
+html.dark .app-theme .bg-white\/70,
+html.dark .dashboard-theme .bg-white,
+html.dark .dashboard-theme .bg-white\/95,
+html.dark .dashboard-theme .bg-white\/90,
+html.dark .dashboard-theme .bg-white\/85,
+html.dark .dashboard-theme .bg-white\/80,
+html.dark .dashboard-theme .bg-white\/75,
+html.dark .dashboard-theme .bg-white\/70 {
+  background-color: #050b16 !important;
+}
+
+html.dark .app-theme .bg-gray-100,
+html.dark .dashboard-theme .bg-gray-100 {
+  background-color: #08111f !important;
+}
+
+html.dark .app-theme .bg-gray-200,
+html.dark .dashboard-theme .bg-gray-200 {
+  background-color: #111c2b !important;
+}
+
+html.dark .app-theme .bg-slate-50,
+html.dark .app-theme .bg-slate-100,
+html.dark .dashboard-theme .bg-slate-50,
+html.dark .dashboard-theme .bg-slate-100 {
+  background-color: #08111f !important;
+}
+
+html.dark .app-theme .bg-red-50,
+html.dark .app-theme .bg-amber-50,
+html.dark .app-theme .bg-emerald-50,
+html.dark .app-theme .bg-blue-50,
+html.dark .app-theme .bg-blue-100,
+html.dark .app-theme .bg-cyan-50,
+html.dark .app-theme .bg-cyan-100,
+html.dark .app-theme .bg-purple-50,
+html.dark .app-theme .bg-pink-50,
+html.dark .app-theme .bg-sky-50,
+html.dark .app-theme .bg-violet-50,
+html.dark .app-theme .bg-orange-50,
+html.dark .dashboard-theme .bg-red-50,
+html.dark .dashboard-theme .bg-amber-50,
+html.dark .dashboard-theme .bg-emerald-50,
+html.dark .dashboard-theme .bg-blue-50,
+html.dark .dashboard-theme .bg-blue-100,
+html.dark .dashboard-theme .bg-cyan-50,
+html.dark .dashboard-theme .bg-cyan-100,
+html.dark .dashboard-theme .bg-purple-50,
+html.dark .dashboard-theme .bg-pink-50,
+html.dark .dashboard-theme .bg-sky-50,
+html.dark .dashboard-theme .bg-violet-50,
+html.dark .dashboard-theme .bg-orange-50 {
+  background-color: rgba(5, 11, 22, 0.98) !important;
+}
+
+html.dark .app-theme .border-gray-100,
+html.dark .app-theme .border-gray-200,
+html.dark .app-theme .border-gray-300,
+html.dark .dashboard-theme .border-gray-100,
+html.dark .dashboard-theme .border-gray-200,
+html.dark .dashboard-theme .border-gray-300 {
+  border-color: #1b2838 !important;
+}
+
+html.dark .app-theme .border-red-100,
+html.dark .app-theme .border-red-200,
+html.dark .app-theme .border-amber-100,
+html.dark .app-theme .border-amber-200,
+html.dark .app-theme .border-emerald-100,
+html.dark .app-theme .border-emerald-200,
+html.dark .app-theme .border-blue-200,
+html.dark .app-theme .border-cyan-200,
+html.dark .app-theme .border-purple-200,
+html.dark .app-theme .border-sky-100,
+html.dark .app-theme .border-sky-200,
+html.dark .app-theme .border-violet-100,
+html.dark .app-theme .border-violet-200,
+html.dark .app-theme .border-orange-200,
+html.dark .app-theme .border-slate-200,
+html.dark .dashboard-theme .border-red-100,
+html.dark .dashboard-theme .border-red-200,
+html.dark .dashboard-theme .border-amber-100,
+html.dark .dashboard-theme .border-amber-200,
+html.dark .dashboard-theme .border-emerald-100,
+html.dark .dashboard-theme .border-emerald-200,
+html.dark .dashboard-theme .border-blue-200,
+html.dark .dashboard-theme .border-cyan-200,
+html.dark .dashboard-theme .border-purple-200,
+html.dark .dashboard-theme .border-sky-100,
+html.dark .dashboard-theme .border-sky-200,
+html.dark .dashboard-theme .border-violet-100,
+html.dark .dashboard-theme .border-violet-200,
+html.dark .dashboard-theme .border-orange-200,
+html.dark .dashboard-theme .border-slate-200 {
+  border-color: #223246 !important;
+}
+
+html.dark .app-theme .text-gray-900,
+html.dark .dashboard-theme .text-gray-900 {
+  color: #f9fafb !important;
+}
+
+html.dark .app-theme .text-gray-800,
+html.dark .app-theme .text-gray-700,
+html.dark .dashboard-theme .text-gray-800,
+html.dark .dashboard-theme .text-gray-700 {
+  color: #e5e7eb !important;
+}
+
+html.dark .app-theme .text-gray-600,
+html.dark .app-theme .text-gray-500,
+html.dark .dashboard-theme .text-gray-600,
+html.dark .dashboard-theme .text-gray-500 {
+  color: #9ca3af !important;
+}
+
+html.dark .app-theme .text-slate-900,
+html.dark .app-theme .text-slate-800,
+html.dark .app-theme .text-slate-700,
+html.dark .app-theme .text-slate-600,
+html.dark .dashboard-theme .text-slate-900,
+html.dark .dashboard-theme .text-slate-800,
+html.dark .dashboard-theme .text-slate-700,
+html.dark .dashboard-theme .text-slate-600 {
+  color: #e5e7eb !important;
+}
+
+html.dark .app-theme .text-slate-500,
+html.dark .dashboard-theme .text-slate-500 {
+  color: #9ca3af !important;
+}
+
+html.dark .app-theme input,
+html.dark .app-theme select,
+html.dark .app-theme textarea,
+html.dark .dashboard-theme input,
+html.dark .dashboard-theme select,
+html.dark .dashboard-theme textarea {
+  background-color: #030813 !important;
+  color: #f9fafb !important;
+  border-color: #223246 !important;
+}
+
+html.dark .app-theme input::placeholder,
+html.dark .app-theme textarea::placeholder,
+html.dark .dashboard-theme input::placeholder,
+html.dark .dashboard-theme textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+html.dark .app-theme option,
+html.dark .dashboard-theme option {
+  background-color: #030813;
+  color: #f9fafb;
+}
+
+html.dark .app-theme .from-gray-50,
+html.dark .app-theme .to-gray-100,
+html.dark .dashboard-theme .from-gray-50,
+html.dark .dashboard-theme .to-gray-100 {
+  --tw-gradient-from: #050b16 var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(8 17 31 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), #08111f, var(--tw-gradient-to) !important;
+}
+
+html.dark .app-theme .bg-primary-50,
+html.dark .dashboard-theme .bg-primary-50 {
+  background-color: rgba(29, 78, 216, 0.16) !important;
+}
+
+html.dark .app-theme .hover\:bg-gray-50:hover,
+html.dark .app-theme .hover\:bg-gray-100:hover,
+html.dark .app-theme .hover\:bg-gray-200:hover,
+html.dark .dashboard-theme .hover\:bg-gray-50:hover,
+html.dark .dashboard-theme .hover\:bg-gray-100:hover,
+html.dark .dashboard-theme .hover\:bg-gray-200:hover {
+  background-color: #08111f !important;
+}
+
+html.dark .app-theme .hover\:bg-white:hover,
+html.dark .app-theme .hover\:bg-red-50:hover,
+html.dark .app-theme .hover\:bg-orange-100:hover,
+html.dark .app-theme .hover\:bg-emerald-50:hover,
+html.dark .app-theme .hover\:bg-emerald-100:hover,
+html.dark .dashboard-theme .hover\:bg-white:hover,
+html.dark .dashboard-theme .hover\:bg-red-50:hover,
+html.dark .dashboard-theme .hover\:bg-orange-100:hover,
+html.dark .dashboard-theme .hover\:bg-emerald-50:hover,
+html.dark .dashboard-theme .hover\:bg-emerald-100:hover {
+  background-color: #08111f !important;
+}
+
+html.dark .app-theme .bg-red-100,
+html.dark .app-theme .bg-amber-100,
+html.dark .app-theme .bg-emerald-100,
+html.dark .app-theme .bg-blue-100,
+html.dark .app-theme .bg-cyan-100,
+html.dark .dashboard-theme .bg-red-100,
+html.dark .dashboard-theme .bg-amber-100,
+html.dark .dashboard-theme .bg-emerald-100,
+html.dark .dashboard-theme .bg-blue-100,
+html.dark .dashboard-theme .bg-cyan-100 {
+  background-color: rgba(8, 17, 31, 0.98) !important;
+}
+
+html.dark .app-theme .text-blue-700,
+html.dark .app-theme .text-blue-800,
+html.dark .app-theme .text-cyan-700,
+html.dark .app-theme .text-cyan-800,
+html.dark .app-theme .text-emerald-700,
+html.dark .app-theme .text-emerald-800,
+html.dark .app-theme .text-amber-700,
+html.dark .app-theme .text-amber-900,
+html.dark .app-theme .text-purple-700,
+html.dark .dashboard-theme .text-blue-700,
+html.dark .dashboard-theme .text-blue-800,
+html.dark .dashboard-theme .text-cyan-700,
+html.dark .dashboard-theme .text-cyan-800,
+html.dark .dashboard-theme .text-emerald-700,
+html.dark .dashboard-theme .text-emerald-800,
+html.dark .dashboard-theme .text-amber-700,
+html.dark .dashboard-theme .text-amber-900,
+html.dark .dashboard-theme .text-purple-700 {
+  color: #e2e8f0 !important;
+}
+
+html.dark .app-theme .from-blue-50,
+html.dark .dashboard-theme .from-blue-50 {
+  --tw-gradient-from: #07101d var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(7 16 29 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+html.dark .app-theme .to-blue-100,
+html.dark .dashboard-theme .to-blue-100 {
+  --tw-gradient-to: #0b1626 var(--tw-gradient-to-position) !important;
+}
+
+html.dark .app-theme .from-emerald-50,
+html.dark .dashboard-theme .from-emerald-50 {
+  --tw-gradient-from: #06110f var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(6 17 15 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+html.dark .app-theme .to-emerald-100,
+html.dark .dashboard-theme .to-emerald-100 {
+  --tw-gradient-to: #0b1714 var(--tw-gradient-to-position) !important;
+}
+
+html.dark .app-theme .from-cyan-50,
+html.dark .dashboard-theme .from-cyan-50 {
+  --tw-gradient-from: #06101a var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(6 16 26 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+html.dark .app-theme .to-cyan-100,
+html.dark .dashboard-theme .to-cyan-100 {
+  --tw-gradient-to: #0a1622 var(--tw-gradient-to-position) !important;
+}
+
+html.dark .app-theme .from-purple-50,
+html.dark .dashboard-theme .from-purple-50 {
+  --tw-gradient-from: #0b0d19 var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(11 13 25 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+html.dark .app-theme .to-pink-50,
+html.dark .dashboard-theme .to-pink-50 {
+  --tw-gradient-to: #140b18 var(--tw-gradient-to-position) !important;
+}
+
+html.dark .app-theme .from-red-50,
+html.dark .dashboard-theme .from-red-50 {
+  --tw-gradient-from: #14090c var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(20 9 12 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+html.dark .app-theme .to-red-100,
+html.dark .dashboard-theme .to-red-100 {
+  --tw-gradient-to: #190d11 var(--tw-gradient-to-position) !important;
+}
+
+html.dark .app-theme .from-amber-50,
+html.dark .dashboard-theme .from-amber-50 {
+  --tw-gradient-from: #141006 var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(20 16 6 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+html.dark .app-theme .to-amber-100,
+html.dark .dashboard-theme .to-amber-100 {
+  --tw-gradient-to: #1a1409 var(--tw-gradient-to-position) !important;
+}
+
+html.dark .app-theme .bg-black\/50,
+html.dark .dashboard-theme .bg-black\/50 {
+  background-color: rgba(0, 0, 0, 0.72) !important;
+}
+
+html.dark .app-theme .shadow-xl,
+html.dark .app-theme .shadow-2xl,
+html.dark .app-theme .shadow-lg,
+html.dark .app-theme .shadow-sm,
+html.dark .dashboard-theme .shadow-xl,
+html.dark .dashboard-theme .shadow-2xl,
+html.dark .dashboard-theme .shadow-lg,
+html.dark .dashboard-theme .shadow-sm {
+  box-shadow: 0 18px 40px -24px rgba(0, 0, 0, 0.55) !important;
+}
+
+.route-shell {
+  min-height: 100vh;
+}
+
+.route-fade-in {
+  animation: routeFadeIn 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.route-fade-out {
+  opacity: 0;
+  transform: translateY(8px) scale(0.992);
+}
+
+@keyframes routeFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.992);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
